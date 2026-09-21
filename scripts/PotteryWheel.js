@@ -10,5 +10,5 @@ export const makePottery = (shape, weight, height) => {
         id: itemID
     }
     potteryCollection.push(potteryItem)
-    return potteryCollection
+    return potteryItem
 }
