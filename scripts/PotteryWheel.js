@@ -1,4 +1,4 @@
-let potteryCollection = []
+
 let itemID = 0
 
 export const makePottery = (shape, weight, height) => {
@@ -9,6 +9,6 @@ export const makePottery = (shape, weight, height) => {
         height: height,
         id: itemID
     }
-    potteryCollection.push(potteryItem)
-    return potteryCollection
+    
+    return potteryItem
 }
