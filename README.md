@@ -114,18 +114,17 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 
 **THEN PUSH YOUR CODE TO GITHUB**
 
-
 ## Vocabulary and Understanding
 
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Explain how you got the HTML, with the correct data, displayed in the browser?
-   > Your answer here
+   > Short answer: I copied from the Martin's Aquarium project. Long answer: I created an index.html page in the home folder, stole the HTML from the index.html that was in the SRC folder, and then added an "article" section in the body to which I assigned the id "potteryList". Then, in main.js, I added a variable name potteryArticle and set my querySelector to look for potteryList. Then, my potteryArticle.innerHTML runs the potteryList function for me. The potteryList function produces the HTML string from the PotteryList.js.
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/63f1459f2d4d43c5a993915180246d78
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
-   > Your answer here
+   > Because there are multiple steps between adding a piece of pottery to the collection and prepping it for sale (such as firing, examining for cracks, pricing), it makes sense to house each of those steps in different modules. This allows each piece of pottery to be tracked, categorized, and filtered-out (if necessary) using individual processes that do not clutter any single module of code. It also makes it easier to track down errors/debug.
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
-   > Your answer here
+   > My function that filters out cracked pottery is housed in PotteryCatalog.js. I would need to correct the for-loop in there to make it so that if cracked === true, it is still priced and pushed to the catalog (which I've named potteryForSale) and, therefore, end up in the potteryForSale clone via the usePottery function.
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/18be0027e21e40289fb32b97b21a3669
