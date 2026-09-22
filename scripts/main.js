@@ -1,6 +1,7 @@
 
 import { makePottery } from './PotteryWheel.js'
 import { firePottery } from './Kiln.js'
+import { toSellOrNotToSell } from './PotteryCatalog.js'
 
 let mug = makePottery ("mug", 2, 6)
 let bowl = makePottery ("bowl", 3, 5)
@@ -14,8 +15,15 @@ firePottery(plate, 1400)
 firePottery(mug02, 2200)
 firePottery(vase, 2400)
 
+toSellOrNotToSell(mug)
+toSellOrNotToSell(bowl)
+toSellOrNotToSell(plate)
+toSellOrNotToSell(mug02)
+toSellOrNotToSell(vase)
+
 console.log(mug)
 console.log(bowl)
 console.log(plate)
 console.log(mug02)
 console.log(vase)
+
