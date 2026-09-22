@@ -127,4 +127,4 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
    > My function that filters out cracked pottery is housed in PotteryCatalog.js. I would need to correct the for-loop in there to make it so that if cracked === true, it is still priced and pushed to the catalog (which I've named potteryForSale) and, therefore, end up in the potteryForSale clone via the usePottery function.
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > https://www.loom.com/share/18be0027e21e40289fb32b97b21a3669
+   > https://www.loom.com/share/1cee8b8853aa4eca928fd9069370eade
